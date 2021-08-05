@@ -14,7 +14,7 @@ namespace MyStat_Copy
         [STAThread]
         static void Main()
         {
-            //Lets go
+            //Lets gooo
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
