@@ -16,5 +16,6 @@ namespace MyStat_Copy
         {
             InitializeComponent();
         }
+        
     }
 }
