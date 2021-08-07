@@ -29,7 +29,12 @@ namespace MyStat_Copy
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gpBox_User = new System.Windows.Forms.GroupBox();
+            this.gunaPictureBox5 = new Guna.UI.WinForms.GunaPictureBox();
+            this.gunaPictureBox4 = new Guna.UI.WinForms.GunaPictureBox();
+            this.picBox_Diamond3 = new Guna.UI.WinForms.GunaPictureBox();
+            this.picBox_Diamond2 = new Guna.UI.WinForms.GunaPictureBox();
+            this.picBox_Diamond1 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaComboBox2 = new Guna.UI.WinForms.GunaComboBox();
             this.gunaComboBox1 = new Guna.UI.WinForms.GunaComboBox();
             this.gunaRadioButton3 = new Guna.UI.WinForms.GunaRadioButton();
@@ -37,43 +42,94 @@ namespace MyStat_Copy
             this.gunaRadioButton1 = new Guna.UI.WinForms.GunaRadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.gunaPictureBox5 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaPictureBox4 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaPictureBox3 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.groupBox1.SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.gpBox_User.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_Diamond3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_Diamond2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_Diamond1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // gpBox_User
             // 
-            this.groupBox1.Controls.Add(this.gunaPictureBox5);
-            this.groupBox1.Controls.Add(this.gunaPictureBox4);
-            this.groupBox1.Controls.Add(this.gunaPictureBox3);
-            this.groupBox1.Controls.Add(this.gunaPictureBox2);
-            this.groupBox1.Controls.Add(this.gunaPictureBox1);
-            this.groupBox1.Controls.Add(this.gunaComboBox2);
-            this.groupBox1.Controls.Add(this.gunaComboBox1);
-            this.groupBox1.Controls.Add(this.gunaRadioButton3);
-            this.groupBox1.Controls.Add(this.gunaRadioButton2);
-            this.groupBox1.Controls.Add(this.gunaRadioButton1);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(3, 24);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1177, 76);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
+            this.gpBox_User.Controls.Add(this.gunaPictureBox5);
+            this.gpBox_User.Controls.Add(this.gunaPictureBox4);
+            this.gpBox_User.Controls.Add(this.picBox_Diamond3);
+            this.gpBox_User.Controls.Add(this.picBox_Diamond2);
+            this.gpBox_User.Controls.Add(this.picBox_Diamond1);
+            this.gpBox_User.Controls.Add(this.gunaComboBox2);
+            this.gpBox_User.Controls.Add(this.gunaComboBox1);
+            this.gpBox_User.Controls.Add(this.gunaRadioButton3);
+            this.gpBox_User.Controls.Add(this.gunaRadioButton2);
+            this.gpBox_User.Controls.Add(this.gunaRadioButton1);
+            this.gpBox_User.Controls.Add(this.label3);
+            this.gpBox_User.Controls.Add(this.label2);
+            this.gpBox_User.Controls.Add(this.pictureBox1);
+            this.gpBox_User.Controls.Add(this.label1);
+            this.gpBox_User.Location = new System.Drawing.Point(3, 21);
+            this.gpBox_User.Name = "gpBox_User";
+            this.gpBox_User.Size = new System.Drawing.Size(1177, 73);
+            this.gpBox_User.TabIndex = 0;
+            this.gpBox_User.TabStop = false;
+            // 
+            // gunaPictureBox5
+            // 
+            this.gunaPictureBox5.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox5.Image = global::MyStat_Copy.Properties.Resources.comments_96px;
+            this.gunaPictureBox5.Location = new System.Drawing.Point(1045, 31);
+            this.gunaPictureBox5.Name = "gunaPictureBox5";
+            this.gunaPictureBox5.Size = new System.Drawing.Size(25, 21);
+            this.gunaPictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gunaPictureBox5.TabIndex = 10;
+            this.gunaPictureBox5.TabStop = false;
+            // 
+            // gunaPictureBox4
+            // 
+            this.gunaPictureBox4.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox4.Image = global::MyStat_Copy.Properties.Resources.close_window_48px;
+            this.gunaPictureBox4.Location = new System.Drawing.Point(960, 31);
+            this.gunaPictureBox4.Name = "gunaPictureBox4";
+            this.gunaPictureBox4.Size = new System.Drawing.Size(25, 21);
+            this.gunaPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gunaPictureBox4.TabIndex = 9;
+            this.gunaPictureBox4.TabStop = false;
+            // 
+            // picBox_Diamond3
+            // 
+            this.picBox_Diamond3.BaseColor = System.Drawing.Color.White;
+            this.picBox_Diamond3.Image = global::MyStat_Copy.Properties.Resources.undiamond;
+            this.picBox_Diamond3.Location = new System.Drawing.Point(929, 32);
+            this.picBox_Diamond3.Name = "picBox_Diamond3";
+            this.picBox_Diamond3.Size = new System.Drawing.Size(25, 21);
+            this.picBox_Diamond3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBox_Diamond3.TabIndex = 8;
+            this.picBox_Diamond3.TabStop = false;
+            // 
+            // picBox_Diamond2
+            // 
+            this.picBox_Diamond2.BaseColor = System.Drawing.Color.White;
+            this.picBox_Diamond2.Image = global::MyStat_Copy.Properties.Resources.undiamond;
+            this.picBox_Diamond2.Location = new System.Drawing.Point(898, 33);
+            this.picBox_Diamond2.Name = "picBox_Diamond2";
+            this.picBox_Diamond2.Size = new System.Drawing.Size(25, 21);
+            this.picBox_Diamond2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBox_Diamond2.TabIndex = 2;
+            this.picBox_Diamond2.TabStop = false;
+            // 
+            // picBox_Diamond1
+            // 
+            this.picBox_Diamond1.BaseColor = System.Drawing.Color.White;
+            this.picBox_Diamond1.Image = global::MyStat_Copy.Properties.Resources.undiamond;
+            this.picBox_Diamond1.Location = new System.Drawing.Point(867, 34);
+            this.picBox_Diamond1.Name = "picBox_Diamond1";
+            this.picBox_Diamond1.Size = new System.Drawing.Size(25, 21);
+            this.picBox_Diamond1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBox_Diamond1.TabIndex = 1;
+            this.picBox_Diamond1.TabStop = false;
+            this.picBox_Diamond1.Click += new System.EventHandler(this.picBox_Diamond1_Click);
             // 
             // gunaComboBox2
             // 
@@ -193,71 +249,6 @@ namespace MyStat_Copy
             this.label2.TabIndex = 2;
             this.label2.Text = "Ceferli Nicat Rasim";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(19, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "1";
-            // 
-            // gunaPictureBox5
-            // 
-            this.gunaPictureBox5.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox5.Image = global::MyStat_Copy.Properties.Resources.comments_96px;
-            this.gunaPictureBox5.Location = new System.Drawing.Point(1045, 31);
-            this.gunaPictureBox5.Name = "gunaPictureBox5";
-            this.gunaPictureBox5.Size = new System.Drawing.Size(25, 21);
-            this.gunaPictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gunaPictureBox5.TabIndex = 10;
-            this.gunaPictureBox5.TabStop = false;
-            // 
-            // gunaPictureBox4
-            // 
-            this.gunaPictureBox4.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox4.Image = global::MyStat_Copy.Properties.Resources.close_window_48px;
-            this.gunaPictureBox4.Location = new System.Drawing.Point(960, 31);
-            this.gunaPictureBox4.Name = "gunaPictureBox4";
-            this.gunaPictureBox4.Size = new System.Drawing.Size(25, 21);
-            this.gunaPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gunaPictureBox4.TabIndex = 9;
-            this.gunaPictureBox4.TabStop = false;
-            // 
-            // gunaPictureBox3
-            // 
-            this.gunaPictureBox3.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox3.Image = global::MyStat_Copy.Properties.Resources.undiamond;
-            this.gunaPictureBox3.Location = new System.Drawing.Point(929, 32);
-            this.gunaPictureBox3.Name = "gunaPictureBox3";
-            this.gunaPictureBox3.Size = new System.Drawing.Size(25, 21);
-            this.gunaPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gunaPictureBox3.TabIndex = 8;
-            this.gunaPictureBox3.TabStop = false;
-            // 
-            // gunaPictureBox2
-            // 
-            this.gunaPictureBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox2.Image = global::MyStat_Copy.Properties.Resources.undiamond;
-            this.gunaPictureBox2.Location = new System.Drawing.Point(898, 33);
-            this.gunaPictureBox2.Name = "gunaPictureBox2";
-            this.gunaPictureBox2.Size = new System.Drawing.Size(25, 21);
-            this.gunaPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gunaPictureBox2.TabIndex = 2;
-            this.gunaPictureBox2.TabStop = false;
-            // 
-            // gunaPictureBox1
-            // 
-            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox1.Image = global::MyStat_Copy.Properties.Resources.undiamond;
-            this.gunaPictureBox1.Location = new System.Drawing.Point(867, 34);
-            this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(25, 21);
-            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gunaPictureBox1.TabIndex = 1;
-            this.gunaPictureBox1.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MyStat_Copy.Properties.Resources.user;
@@ -268,20 +259,30 @@ namespace MyStat_Copy
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(17, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(19, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "1";
+            // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gpBox_User);
             this.Name = "UserControl1";
             this.Size = new System.Drawing.Size(1246, 440);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gpBox_User.ResumeLayout(false);
+            this.gpBox_User.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_Diamond3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_Diamond2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_Diamond1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -289,7 +290,7 @@ namespace MyStat_Copy
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gpBox_User;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
@@ -299,9 +300,9 @@ namespace MyStat_Copy
         private Guna.UI.WinForms.GunaRadioButton gunaRadioButton1;
         private Guna.UI.WinForms.GunaComboBox gunaComboBox1;
         private Guna.UI.WinForms.GunaComboBox gunaComboBox2;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox3;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox2;
+        private Guna.UI.WinForms.GunaPictureBox picBox_Diamond1;
+        private Guna.UI.WinForms.GunaPictureBox picBox_Diamond3;
+        private Guna.UI.WinForms.GunaPictureBox picBox_Diamond2;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox4;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox5;
     }

@@ -22,5 +22,18 @@ namespace MyStat_Copy
             //gunaRadioButton1.CheckedOffColor
 
         }
+
+        private void picBox_Diamond1_Click(object sender, EventArgs e)
+        {
+
+            if (picBox_Diamond1.Image.Equals(Properties.Resources.undiamond))
+            {
+                picBox_Diamond1.Image = Properties.Resources.diamond;
+            }
+            else if (picBox_Diamond1.Tag.Equals(Properties.Resources.diamond)){
+                picBox_Diamond1.Image = Properties.Resources.undiamond;
+            }
+
+        }
     }
 }
