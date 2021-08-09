@@ -29,15 +29,16 @@ namespace MyStat_Copy
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Seperator1 = new Guna.UI.WinForms.GunaSeparator();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaRadioButton1 = new Guna.UI.WinForms.GunaRadioButton();
+            this.rb_MarkEveryBody = new Guna.UI.WinForms.GunaRadioButton();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_DiamondCount = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             this.gunaRadioButton2 = new Guna.UI.WinForms.GunaRadioButton();
             this.rb_MainTeacher = new Guna.UI.WinForms.GunaLabel();
@@ -46,13 +47,16 @@ namespace MyStat_Copy
             this.gunaLabel11 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel12 = new Guna.UI.WinForms.GunaLabel();
             this.groupBox_1 = new Bunifu.UI.WinForms.BunifuGroupBox();
-            this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
+            this.userControl14 = new MyStat_Copy.UserControl1();
+            this.userControl13 = new MyStat_Copy.UserControl1();
+            this.userControl12 = new MyStat_Copy.UserControl1();
+            this.userControl11 = new MyStat_Copy.UserControl1();
             this.panel_UserProperties = new Guna.UI.WinForms.GunaPanel();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.picBox_Pencil = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
-            this.UserControl = new MyStat_Copy.UserControl1();
+            this.UserControl1 = new MyStat_Copy.UserControl1();
+            this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.groupBox_1.SuspendLayout();
             this.panel_UserProperties.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
@@ -103,17 +107,18 @@ namespace MyStat_Copy
             this.gunaLabel4.TabIndex = 5;
             this.gunaLabel4.Text = "Mark everybody";
             // 
-            // gunaRadioButton1
+            // rb_MarkEveryBody
             // 
-            this.gunaRadioButton1.BackColor = System.Drawing.Color.LightBlue;
-            this.gunaRadioButton1.BaseColor = System.Drawing.Color.White;
-            this.gunaRadioButton1.CheckedOffColor = System.Drawing.Color.White;
-            this.gunaRadioButton1.CheckedOnColor = System.Drawing.Color.Lime;
-            this.gunaRadioButton1.FillColor = System.Drawing.Color.Lime;
-            this.gunaRadioButton1.Location = new System.Drawing.Point(527, 54);
-            this.gunaRadioButton1.Name = "gunaRadioButton1";
-            this.gunaRadioButton1.Size = new System.Drawing.Size(20, 20);
-            this.gunaRadioButton1.TabIndex = 6;
+            this.rb_MarkEveryBody.BackColor = System.Drawing.Color.LightBlue;
+            this.rb_MarkEveryBody.BaseColor = System.Drawing.Color.White;
+            this.rb_MarkEveryBody.CheckedOffColor = System.Drawing.Color.White;
+            this.rb_MarkEveryBody.CheckedOnColor = System.Drawing.Color.Lime;
+            this.rb_MarkEveryBody.FillColor = System.Drawing.Color.Lime;
+            this.rb_MarkEveryBody.Location = new System.Drawing.Point(527, 54);
+            this.rb_MarkEveryBody.Name = "rb_MarkEveryBody";
+            this.rb_MarkEveryBody.Size = new System.Drawing.Size(20, 20);
+            this.rb_MarkEveryBody.TabIndex = 6;
+            this.rb_MarkEveryBody.CheckedChanged += new System.EventHandler(this.rb_MarkEveryBody_CheckedChanged);
             // 
             // gunaLabel5
             // 
@@ -139,17 +144,18 @@ namespace MyStat_Copy
             this.gunaLabel6.TabIndex = 8;
             this.gunaLabel6.Text = "Class work";
             // 
-            // gunaLabel7
+            // lbl_DiamondCount
             // 
-            this.gunaLabel7.AutoSize = true;
-            this.gunaLabel7.BackColor = System.Drawing.Color.LightBlue;
-            this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel7.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.gunaLabel7.Location = new System.Drawing.Point(1025, 38);
-            this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(23, 25);
-            this.gunaLabel7.TabIndex = 10;
-            this.gunaLabel7.Text = "5";
+            this.lbl_DiamondCount.AutoSize = true;
+            this.lbl_DiamondCount.BackColor = System.Drawing.Color.LightBlue;
+            this.lbl_DiamondCount.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_DiamondCount.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lbl_DiamondCount.Location = new System.Drawing.Point(1025, 38);
+            this.lbl_DiamondCount.Name = "lbl_DiamondCount";
+            this.lbl_DiamondCount.Size = new System.Drawing.Size(23, 25);
+            this.lbl_DiamondCount.TabIndex = 10;
+            this.lbl_DiamondCount.Tag = "";
+            this.lbl_DiamondCount.Text = "5";
             // 
             // gunaLabel8
             // 
@@ -232,12 +238,14 @@ namespace MyStat_Copy
             this.groupBox_1.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.groupBox_1.BorderRadius = 1;
             this.groupBox_1.BorderThickness = 1;
-            this.groupBox_1.Controls.Add(this.gunaAdvenceButton1);
-            this.groupBox_1.Controls.Add(this.gunaTextBox1);
+            this.groupBox_1.Controls.Add(this.userControl14);
+            this.groupBox_1.Controls.Add(this.userControl13);
+            this.groupBox_1.Controls.Add(this.userControl12);
+            this.groupBox_1.Controls.Add(this.userControl11);
             this.groupBox_1.Controls.Add(this.panel_UserProperties);
             this.groupBox_1.Controls.Add(this.picBox_Pencil);
             this.groupBox_1.Controls.Add(this.gunaLabel9);
-            this.groupBox_1.Controls.Add(this.UserControl);
+            this.groupBox_1.Controls.Add(this.UserControl1);
             this.groupBox_1.Controls.Add(this.Seperator1);
             this.groupBox_1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.groupBox_1.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -249,62 +257,55 @@ namespace MyStat_Copy
             this.groupBox_1.TabIndex = 18;
             this.groupBox_1.TabStop = false;
             // 
-            // gunaAdvenceButton1
+            // userControl14
             // 
-            this.gunaAdvenceButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton1.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaAdvenceButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.gunaAdvenceButton1.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.CheckedImage = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton1.CheckedImage")));
-            this.gunaAdvenceButton1.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gunaAdvenceButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaAdvenceButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaAdvenceButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton1.Image")));
-            this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton1.Location = new System.Drawing.Point(683, 604);
-            this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
-            this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.OnHoverImage = null;
-            this.gunaAdvenceButton1.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.Size = new System.Drawing.Size(180, 42);
-            this.gunaAdvenceButton1.TabIndex = 22;
-            this.gunaAdvenceButton1.Text = "Save";
+            this.userControl14.Diamond1 = false;
+            this.userControl14.Diamond2 = false;
+            this.userControl14.Diamond3 = false;
+            this.userControl14.Location = new System.Drawing.Point(0, 651);
+            this.userControl14.Name = "userControl14";
+            this.userControl14.Size = new System.Drawing.Size(1979, 166);
+            this.userControl14.TabIndex = 24;
             // 
-            // gunaTextBox1
+            // userControl13
             // 
-            this.gunaTextBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaTextBox1.BorderColor = System.Drawing.Color.Silver;
-            this.gunaTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox1.FocusedBaseColor = System.Drawing.Color.White;
-            this.gunaTextBox1.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaTextBox1.Location = new System.Drawing.Point(893, 581);
-            this.gunaTextBox1.Name = "gunaTextBox1";
-            this.gunaTextBox1.PasswordChar = '\0';
-            this.gunaTextBox1.SelectedText = "";
-            this.gunaTextBox1.Size = new System.Drawing.Size(285, 85);
-            this.gunaTextBox1.TabIndex = 21;
-            this.gunaTextBox1.Text = "gunaTextBox1";
+            this.userControl13.Diamond1 = false;
+            this.userControl13.Diamond2 = false;
+            this.userControl13.Diamond3 = false;
+            this.userControl13.Location = new System.Drawing.Point(0, 543);
+            this.userControl13.Name = "userControl13";
+            this.userControl13.Size = new System.Drawing.Size(1696, 144);
+            this.userControl13.TabIndex = 23;
+            // 
+            // userControl12
+            // 
+            this.userControl12.Diamond1 = false;
+            this.userControl12.Diamond2 = false;
+            this.userControl12.Diamond3 = false;
+            this.userControl12.Location = new System.Drawing.Point(0, 435);
+            this.userControl12.Name = "userControl12";
+            this.userControl12.Size = new System.Drawing.Size(1454, 125);
+            this.userControl12.TabIndex = 22;
+            // 
+            // userControl11
+            // 
+            this.userControl11.Diamond1 = false;
+            this.userControl11.Diamond2 = false;
+            this.userControl11.Diamond3 = false;
+            this.userControl11.Location = new System.Drawing.Point(0, 333);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(1246, 108);
+            this.userControl11.TabIndex = 21;
             // 
             // panel_UserProperties
             // 
             this.panel_UserProperties.BackColor = System.Drawing.Color.LightBlue;
-            this.panel_UserProperties.Controls.Add(this.gunaRadioButton1);
+            this.panel_UserProperties.Controls.Add(this.rb_MarkEveryBody);
             this.panel_UserProperties.Controls.Add(this.gunaLabel3);
             this.panel_UserProperties.Controls.Add(this.gunaLabel4);
             this.panel_UserProperties.Controls.Add(this.gunaLabel5);
             this.panel_UserProperties.Controls.Add(this.gunaLabel6);
-            this.panel_UserProperties.Controls.Add(this.gunaLabel7);
+            this.panel_UserProperties.Controls.Add(this.lbl_DiamondCount);
             this.panel_UserProperties.Controls.Add(this.gunaLabel8);
             this.panel_UserProperties.Controls.Add(this.gunaLabel2);
             this.panel_UserProperties.Controls.Add(this.gunaPictureBox1);
@@ -348,12 +349,84 @@ namespace MyStat_Copy
             this.gunaLabel9.TabIndex = 0;
             this.gunaLabel9.Text = "Subject of the lesson";
             // 
-            // UserControl
+            // UserControl1
             // 
-            this.UserControl.Location = new System.Drawing.Point(6, 237);
-            this.UserControl.Name = "UserControl";
-            this.UserControl.Size = new System.Drawing.Size(1333, 112);
-            this.UserControl.TabIndex = 0;
+            this.UserControl1.Diamond1 = false;
+            this.UserControl1.Diamond2 = false;
+            this.UserControl1.Diamond3 = false;
+            this.UserControl1.Location = new System.Drawing.Point(0, 234);
+            this.UserControl1.Name = "UserControl1";
+            this.UserControl1.Size = new System.Drawing.Size(1333, 112);
+            this.UserControl1.TabIndex = 0;
+            // 
+            // bunifuSnackbar1
+            // 
+            this.bunifuSnackbar1.AllowDragging = false;
+            this.bunifuSnackbar1.AllowMultipleViews = true;
+            this.bunifuSnackbar1.ClickToClose = true;
+            this.bunifuSnackbar1.DoubleClickToClose = true;
+            this.bunifuSnackbar1.DurationAfterIdle = 3000;
+            this.bunifuSnackbar1.ErrorOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.ErrorOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.ErrorOptions.ActionBorderRadius = 1;
+            this.bunifuSnackbar1.ErrorOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuSnackbar1.ErrorOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.ErrorOptions.BackColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.ErrorOptions.BorderColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.ErrorOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(199)))));
+            this.bunifuSnackbar1.ErrorOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.bunifuSnackbar1.ErrorOptions.ForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.ErrorOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon")));
+            this.bunifuSnackbar1.ErrorOptions.IconLeftMargin = 12;
+            this.bunifuSnackbar1.FadeCloseIcon = false;
+            this.bunifuSnackbar1.Host = Bunifu.UI.WinForms.BunifuSnackbar.Hosts.FormOwner;
+            this.bunifuSnackbar1.InformationOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.InformationOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.InformationOptions.ActionBorderRadius = 1;
+            this.bunifuSnackbar1.InformationOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuSnackbar1.InformationOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.InformationOptions.BackColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.InformationOptions.BorderColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.InformationOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.InformationOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.bunifuSnackbar1.InformationOptions.ForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.InformationOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon1")));
+            this.bunifuSnackbar1.InformationOptions.IconLeftMargin = 12;
+            this.bunifuSnackbar1.Margin = 10;
+            this.bunifuSnackbar1.MaximumSize = new System.Drawing.Size(0, 0);
+            this.bunifuSnackbar1.MaximumViews = 7;
+            this.bunifuSnackbar1.MessageRightMargin = 15;
+            this.bunifuSnackbar1.MinimumSize = new System.Drawing.Size(0, 0);
+            this.bunifuSnackbar1.ShowBorders = false;
+            this.bunifuSnackbar1.ShowCloseIcon = false;
+            this.bunifuSnackbar1.ShowIcon = true;
+            this.bunifuSnackbar1.ShowShadows = true;
+            this.bunifuSnackbar1.SuccessOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.SuccessOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.SuccessOptions.ActionBorderRadius = 1;
+            this.bunifuSnackbar1.SuccessOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuSnackbar1.SuccessOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.SuccessOptions.BackColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.SuccessOptions.BorderColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.SuccessOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
+            this.bunifuSnackbar1.SuccessOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.bunifuSnackbar1.SuccessOptions.ForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.SuccessOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon2")));
+            this.bunifuSnackbar1.SuccessOptions.IconLeftMargin = 12;
+            this.bunifuSnackbar1.ViewsMargin = 7;
+            this.bunifuSnackbar1.WarningOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.WarningOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.WarningOptions.ActionBorderRadius = 1;
+            this.bunifuSnackbar1.WarningOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuSnackbar1.WarningOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.WarningOptions.BackColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.WarningOptions.BorderColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.WarningOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(143)))));
+            this.bunifuSnackbar1.WarningOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.bunifuSnackbar1.WarningOptions.ForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.WarningOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon3")));
+            this.bunifuSnackbar1.WarningOptions.IconLeftMargin = 12;
+            this.bunifuSnackbar1.ZoomCloseIcon = true;
             // 
             // Form1
             // 
@@ -388,11 +461,11 @@ namespace MyStat_Copy
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
-        private Guna.UI.WinForms.GunaRadioButton gunaRadioButton1;
+        private Guna.UI.WinForms.GunaRadioButton rb_MarkEveryBody;
         private Guna.UI.WinForms.GunaLabel gunaLabel5;
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
-        private Guna.UI.WinForms.GunaLabel gunaLabel7;
+        private Guna.UI.WinForms.GunaLabel lbl_DiamondCount;
         private Guna.UI.WinForms.GunaLabel gunaLabel8;
         private Guna.UI.WinForms.GunaRadioButton gunaRadioButton2;
         private Guna.UI.WinForms.GunaLabel rb_MainTeacher;
@@ -402,11 +475,14 @@ namespace MyStat_Copy
         private Guna.UI.WinForms.GunaLabel gunaLabel12;
         private Bunifu.UI.WinForms.BunifuGroupBox groupBox_1;
         private Guna.UI.WinForms.GunaLabel gunaLabel9;
-        private UserControl1 UserControl;
+        private UserControl1 UserControl1;
         private Guna.UI.WinForms.GunaPictureBox picBox_Pencil;
         private Guna.UI.WinForms.GunaPanel panel_UserProperties;
-        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox1;
+        private UserControl1 userControl11;
+        private Bunifu.UI.WinForms.BunifuSnackbar bunifuSnackbar1;
+        private UserControl1 userControl14;
+        private UserControl1 userControl13;
+        private UserControl1 userControl12;
     }
 }
 
